@@ -1,0 +1,15 @@
+<h1 class="h1OnDashboardDesktop">My Booking</h1>
+<div class="dashboardSectionMainContent">
+  <p><b>Booking Order #12597</b></p>
+  <p><b>Departure Date:</b> <br />{{ departureDate }}</p>
+  <p *ngIf="seat"><b>Seat Number:</b> <br />{{ mySeat.seat }}</p>
+  <p *ngIf="!seat"><b>Seat Number:</b><br />{{ mySeat }}</p>
+  <div class="buttonList">    
+    <button class="hiddenOnDesktop buttonStyleLink" [routerLink]="['/dashboard/boarding-pass']">
+      Boarding pass
+    </button>
+    <a class="hiddenOnDesktop buttonStyleLink" [routerLink]="['/dashboard/seat-selection']"
+      >Change Seat</a
+    >
+  </div>
+</div>

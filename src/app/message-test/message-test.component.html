@@ -1,0 +1,15 @@
+<p></p>
+<div class="containerMessage">
+  <div *ngIf="!messageStartTest; else elseBlock">
+    <p>To infinity and beyond!</p>
+    <p>
+      Test your knowledge by taking this space quiz !<br />
+      Don't make mistakes .... <br />
+      The more correct answers you get, the more privileged seats you get !!!
+    </p>
+  </div>
+
+  <ng-template #elseBlock>
+    Your have already taken the test. You can take it again but your rank will not change.
+  </ng-template>
+</div>

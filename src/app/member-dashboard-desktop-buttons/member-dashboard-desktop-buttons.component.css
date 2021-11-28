@@ -1,0 +1,11 @@
+.dashboardButtonsDesktop {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .userHeaderOnDashboardDesktop {
+    margin-bottom: 30px;
+  }
+}

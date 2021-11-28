@@ -1,0 +1,77 @@
+.headerBackground {
+  background: url('/assets/images/header.jpg') no-repeat;
+  background-size: cover;
+  background-position-x: -60px;
+  min-height: calc(100vh - 56px);
+  background-attachment: scroll;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.headerTitle {
+  margin: 20px 20px 20px 20px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+.headerTitle > h1 {
+  color: #fff;
+  font-size: 60px;
+}
+
+.headerTitle > p {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Mid Desktop */
+
+@media screen and (min-width: 768px) {
+  .headerBackground {
+    background-position-x: center;
+    background-attachment: fixed;
+  }
+  .headerTitle {
+    width: 60%;
+    max-width: 800px;
+    padding: 40px;
+    margin-top: 20px;
+  }
+  .headerTitle > h1 {
+    color: #fff;
+    font-size: 70px;
+  }
+  .headerTitle > p {
+    font-size: 20px;
+  }
+  .headerTitle > a {
+    font-size: 20px;
+  }
+}
+
+/*Normal desktop*/
+
+@media screen and (min-width: 1200px) {
+  .headerBackground {
+    background-position-x: center;
+    background-attachment: fixed;
+  }
+  .headerTitle {
+    width: 60%;
+    max-width: 800px;
+    padding: 40px;
+    margin-top: 40px;
+  }
+  .headerTitle > h1 {
+    color: #fff;
+    font-size: 96px;
+  }
+  .headerTitle > p {
+    font-size: 24px;
+  }
+  .headerTitle > a {
+    font-size: 24px;
+  }
+}

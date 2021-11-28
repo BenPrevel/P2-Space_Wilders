@@ -1,0 +1,155 @@
+[
+  {
+    "question": "Qui fut le premier homme à avoir posé le pied sur la Lune ?",
+    "answers": [
+      {"id": 1, "text": "Michael Jackson"},
+      {"id": 2, "text": "Youri Gagarine"},
+      {"id": 3, "text": "Tintin"},
+      {"id": 4, "text": "Neil Armstrong"}
+    ],
+    "idAnswer": 4
+  },
+  {
+    "question": "Lequel de ces énoncés est faux ?",
+    "answers": [
+      {"id": 1, "text": "Plus les masses sont grandes, plus la gravité se fait sentir"},
+      {"id": 2, "text": "Plus la distance est grande, plus la gravité se fait sentir"},
+      {"id": 3, "text": "La gravité n'est perceptible que pour des grandes masses"},
+      {"id": 4, "text": "La gravité agit sur tous les objets ayant une masse"}
+    ],
+    "idAnswer": 2
+  },
+  {
+    "question": "Pourquoi les astronautes doivent faire du sport dans l'espace ?",
+    "answers": [
+      {
+        "id": 1,
+        "text": "Pour rester en santé et en forme en vue de leur retour en situation de pesanteur"
+      },
+      {"id": 2, "text": "Pour ne pas grossir"},
+      {"id": 3, "text": "Parce qu'il est plus facile de gagner en muscle dans l'espace"},
+      {"id": 4, "text": "Pour rien"}
+    ],
+    "idAnswer": 1
+  },
+  {
+    "question": "Quelle est la planète la plus éloignée du Soleil ?",
+    "answers": [
+      {"id": 1, "text": "Neptune"},
+      {"id": 2, "text": "Pluton"},
+      {"id": 3, "text": "Uranus"},
+      {"id": 4, "text": "Saturne"}
+    ],
+    "idAnswer": 1
+  },
+  {
+    "question": "Qu'est-ce qu'il y a au centre des galaxies ?",
+    "answers": [
+      {"id": 1, "text": "Un trou de ver"},
+      {"id": 2, "text": "Une étoile"},
+      {"id": 3, "text": "Une autre galaxie"},
+      {"id": 4, "text": "Un trou noir supermassif"}
+    ],
+    "idAnswer": 4
+  },
+  {
+    "question": "Quelle est la planète dont la durée du jour est la plus courte ?",
+    "answers": [
+      {"id": 1, "text": "Mars"},
+      {"id": 2, "text": "Jupiter"},
+      {"id": 3, "text": "Vénus"},
+      {"id": 4, "text": "Neptune"}
+    ],
+    "idAnswer": 2
+  },
+  {
+    "question": "Dans laquelle de ces ceintures se trouve Pluton ?",
+    "answers": [
+      {"id": 1, "text": "La ceinture d'or"},
+      {"id": 2, "text": "La ceinture de Kuiper"},
+      {"id": 3, "text": "La ceinture d'astéroïdes"},
+      {"id": 4, "text": "La ceinture de sécurité"}
+    ],
+    "idAnswer": 2
+  },
+  {
+    "question": "La queue d'une comète est dirigée dans quelle direction ?",
+    "answers": [
+      {"id": 1, "text": "Dans la direction du Soleil"},
+      {"id": 2, "text": "Dans la direction opposée au Soleil"},
+      {"id": 3, "text": "Dans la direction opposée à son déplacement"},
+      {"id": 4, "text": "Dans la direction de son déplacement"}
+    ],
+    "idAnswer": 2
+  },
+  {
+    "question": "Quelles étoiles vivent le plus longtemps ?",
+    "answers": [
+      {"id": 1, "text": "Les plus grandes"},
+      {"id": 2, "text": "Les moyennes"},
+      {"id": 3, "text": "Les plus petites"},
+      {"id": 4, "text": "Elles ont toutes la même durée de vie"}
+    ],
+    "idAnswer": 3
+  },
+  {
+    "question": "Que sont les taches solaires ?",
+    "answers": [
+      {"id": 1, "text": "Des zones froides du Soleil"},
+      {"id": 2, "text": "Des trous dans le Soleil"},
+      {"id": 3, "text": "Des zones chaudes du Soleil"},
+      {"id": 4, "text": "Des zones polluées du Soleil"}
+    ],
+    "idAnswer": 1
+  },
+  {
+    "question": "Dans l'espace, les astronautes...",
+    "answers": [
+      {"id": 1, "text": "Grandissent de 4 cm"},
+      {"id": 2, "text": "Grandissent de 10 cm"},
+      {"id": 3, "text": "Retrécissent de 4 cm"},
+      {"id": 4, "text": "Retrécissent de 10 cm"}
+    ],
+    "idAnswer": 1
+  },
+  {
+    "question": "Comment appelle-t-on une forme imaginée par un groupement d'étoiles ?",
+    "answers": [
+      {"id": 1, "text": "Galaxie"},
+      {"id": 2, "text": "Constellation"},
+      {"id": 3, "text": "Nébuleuse"},
+      {"id": 4, "text": "Trou noir"}
+    ],
+    "idAnswer": 2
+  },
+  {
+    "question": "Angle mesurée à partir de l'horizon en montant en ligne droite",
+    "answers": [
+      {"id": 1, "text": "Altitude"},
+      {"id": 2, "text": "Azimut"},
+      {"id": 3, "text": "Astrolabe"},
+      {"id": 4, "text": "Angle d'incidence"}
+    ],
+    "idAnswer": 1
+  },
+  {
+    "question": "L'orbite elliptique des planètes est la résultante du mouvement rectiligne des planètes et de...",
+    "answers": [
+      {"id": 1, "text": "La force centrifuge"},
+      {"id": 2, "text": "L'attraction de la Lune"},
+      {"id": 3, "text": "La force de gravité du Soleil"},
+      {"id": 4, "text": "L'attraction de la Terre"}
+    ],
+    "idAnswer": 3
+  },
+  {
+    "question": "Où commence l'espace?",
+    "answers": [
+      {"id": 1, "text": "Au-delà de la thermosphère, à 400 km d'altitude"},
+      {"id": 2, "text": "Au même niveau que la stratosphère"},
+      {"id": 3, "text": "Au-delà de la thermosphère, à 600 km d'altitude"},
+      {"id": 4, "text": "Au-delà de la thermosphère à 500 km d'altitude"}
+    ],
+    "idAnswer": 4
+  }
+]

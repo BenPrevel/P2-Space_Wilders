@@ -1,0 +1,26 @@
+<div class="qrContainer">
+  <h1>Boarding pass</h1>
+  <div class="qrCodeContainer">
+    <!--Génération du QRcode-->
+    <ngx-qrcode
+      class="qrCode"
+      [elementType]="elementType"
+      [errorCorrectionLevel]="correctionLevel"
+      [value]="value"
+    >
+    </ngx-qrcode>
+  </div>
+
+  <div class="qrInfo">
+    <p>Booking order : #12597</p>
+    <p>
+      Departure date : <br />
+      {{ date }}
+    </p>
+    <!--si seat contient une donnée, on récupère la valeur dans le local storage-->
+    <p *ngIf="seat !== null; else noSeat">Seat number : {{ seat.seat }}</p>
+    <!--si seat est vide, on affiche une valeur par défaut : F4-->
+    <ng-template #noSeat><p>Seat number : F4</p></ng-template>
+  </div>
+  <a class="buttonStyleLink btnBoarding" [routerLink]="['/dashboard']">Dashboard</a>
+</div>

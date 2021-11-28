@@ -1,0 +1,64 @@
+.TestAccordionAndConfirmButton {
+  width: 100%;
+}
+
+.TestAccordion {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.promotionTestAnswers {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.promotionTestQuestion {
+  border: none;
+  text-align: center;
+}
+
+/* Pour annuler le comportement de bootstrap */
+h2 {
+  font-family: OpenSans;
+}
+
+/* classe bootstrap ci-dessous */
+.accordion-item {
+  background: none;
+  margin-bottom: -10px;
+}
+
+.accordion-button {
+  background: rgba(0, 0, 0);
+  color: white;
+}
+
+.btn {
+  border-radius: 0px;
+}
+
+.btn:hover {
+  cursor: default;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border-color: white;
+}
+
+/* couleur pour la correction */
+.userAnswer {
+  color: red;
+}
+
+.rightAnswer {
+  color: green;
+}
+
+@media screen and (min-width: 768px) {
+  .memberSections {
+    width: 50%;
+  }
+}

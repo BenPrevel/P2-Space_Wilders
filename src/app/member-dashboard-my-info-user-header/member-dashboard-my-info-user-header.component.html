@@ -1,0 +1,13 @@
+<div class="userHeader">
+  <img *ngIf="user; else default" class="userAvatar" src="{{ user.uAvatar }}" alt="avatar" />
+  <ng-template #default>
+    <img class="userAvatar" src="assets/images/avatarchoose.png" alt="avatar" />
+  </ng-template>
+  <div class="userInfo">
+    <p><b>Rank:</b></p>
+    <p>{{ rank }}</p>
+    <a class="hiddenOnDesktop buttonStyleLink" [routerLink]="['/dashboard/promotion-test']"
+      >Promotion Test</a
+    >
+  </div>
+</div>

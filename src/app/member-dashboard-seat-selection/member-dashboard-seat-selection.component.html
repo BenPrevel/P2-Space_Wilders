@@ -1,0 +1,74 @@
+<div class="dashboardStyle">
+  <div class="memberSections">
+    <h1>Select Seat</h1>
+    <div class="guideMap">
+      <!-- guide de la cabine -->
+      <div class="cabinGuide">
+        <p>Cabin guide</p>
+        <div *ngFor="let guide of guideSeat" class="{{ guide.classe }}">
+          <div>
+            <p
+              class="btn btn-secondary noFocus"
+              [ngClass]="{opacity: guide.text === 'Unavailable seat'}"
+            ></p>
+          </div>
+          <p>{{ guide.text }}</p>
+        </div>
+      </div>
+      <!-- Plan de la cabine -->
+      <form
+        class="seatMap"
+        [formGroup]="memberSeatForm"
+        (ngSubmit)="seatForm.valid && onSubmit()"
+        #seatForm="ngForm"
+      >
+        <div *ngFor="let letter of letters; let i = index">
+          <div class="row row{{ letter }}">
+            <div>
+              <ng-container *ngFor="let number of numbersToThree">
+                <fieldset [disabled]="disabledClass[i]">
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="seat"
+                    id="option{{ letter }}{{ number }}"
+                    autocomplete="off"
+                    formControlName="seat"
+                    value="{{ letter }}{{ number }}"
+                  />
+                  <label class="btn btn-secondary" for="option{{ letter }}{{ number }}"
+                    >{{ letter }}{{ number }}</label
+                  >
+                </fieldset>
+              </ng-container>
+            </div>
+            <div>
+              <ng-container *ngFor="let number of numbersToSix">
+                <fieldset [disabled]="disabledClass[i]">
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="seat"
+                    id="option{{ letter }}{{ number }}"
+                    autocomplete="off"
+                    formControlName="seat"
+                    value="{{ letter }}{{ number }}"
+                  />
+                  <label class="btn btn-secondary" for="option{{ letter }}{{ number }}"
+                    >{{ letter }}{{ number }}</label
+                  >
+                </fieldset>
+              </ng-container>
+            </div>
+          </div>
+        </div>
+        <p>*A better rank is required to unlock seats from other classes</p>
+        <!-- boutons -->
+        <div class="buttonList">
+          <button type="submit">Confirm Seat</button>
+          <a class="buttonStyleLink" [routerLink]="['/dashboard']">Dashboard</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

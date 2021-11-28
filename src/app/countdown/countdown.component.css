@@ -1,0 +1,22 @@
+.countdown {
+  display: flex;
+  background-color: var(--marsColor);
+  width: 100%;
+  align-items: stretch;
+  height: 19px;
+  
+}
+.start {
+  color:white;
+  font-size: 12px;
+  padding-left: 30px;
+}
+
+@media screen and (min-width: 768px){
+  .start {
+    font-size: 14px;
+  }
+  .countdown{
+    height: 23px;
+  }
+}

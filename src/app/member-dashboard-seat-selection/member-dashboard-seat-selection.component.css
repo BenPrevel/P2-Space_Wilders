@@ -1,0 +1,100 @@
+.btn {
+  width: 48px;
+  height: 38px;
+}
+
+.guideMap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cabinGuide .btn {
+  cursor: default;
+}
+
+.seatMap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.seatMap p {
+  font-size: x-small;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.row > * {
+  width: auto;
+}
+
+.rowA .btn-secondary,
+.guideA .btn-secondary {
+  background-color: green;
+}
+
+.rowB .btn-secondary,
+.rowC .btn-secondary,
+.guideB .btn-secondary {
+  background-color: yellow;
+}
+
+.rowD .btn-secondary,
+.rowE .btn-secondary,
+.guideD .btn-secondary {
+  background-color: orange;
+}
+
+.rowF .btn-secondary,
+.rowG .btn-secondary,
+.guideF .btn-secondary {
+  background-color: red;
+}
+
+.btn-check:disabled + .btn,
+.btn-check[disabled] + .btn {
+  opacity: 0.25;
+}
+
+.btn-check:active + .btn-secondary,
+.btn-check:checked + .btn-secondary,
+.btn-secondary.active,
+.btn-secondary:active,
+.show > .btn-secondary.dropdown-toggle,
+.guideSelected .btn-secondary {
+  background-color: blue;
+}
+
+.guideA,
+.guideB,
+.guideD,
+.guideF,
+.guideSelected {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+p {
+  text-align: center;
+  line-height: 40px;
+}
+
+.noFocus,
+.noFocus:hover {
+  border: none;
+  transition: none;
+}
+
+fieldset {
+  display: inline-block;
+}
+
+.opacity {
+  opacity: 0.3;
+}

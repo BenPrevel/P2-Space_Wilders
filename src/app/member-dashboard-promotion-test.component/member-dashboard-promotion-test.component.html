@@ -1,0 +1,78 @@
+<div class="dashboardStyle">
+  <div class="memberSections">
+    <h1>Promotion Test</h1>
+
+    <app-message-test></app-message-test>
+
+    <div class="TestAccordionAndConfirmButton">
+      <form
+        (ngSubmit)="myForm.valid && checkAnswers()"
+        [formGroup]="questionForm"
+        #myForm="ngForm"
+        class="accordion TestAccordion"
+        id="accordionExample"
+      >
+        <div formArrayName="questions">
+          <!-- on boucle dans la liste d'objets de question -->
+          <div *ngFor="let question of questionsArray; let i = index" [formGroupName]="i">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="{{ 'heading' + (i + 1) }}">
+                <button
+                  class="accordion-button"
+                  [ngClass]="{collapsed: i != 0}"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  attr.data-bs-target="{{ '#collapse' + (i + 1) }}"
+                  attr.aria-expanded="{{ i === 0 }}"
+                  attr.aria-controls="{{ 'collapse' + (i + 1) }}"
+                >
+                  Question #{{ i + 1 }}
+                </button>
+              </h2>
+              <div
+                id="{{ 'collapse' + (i + 1) }}"
+                class="accordion-collapse collapse"
+                [ngClass]="{show: i === 0}"
+                attr.aria-labelledby="{{ 'heading' + (i + 1) }}"
+                data-bs-parent="#accordionExample"
+              >
+                <fieldset class="accordion-body">
+                  <div>
+                    <!-- Texte de la question dans l'objet question -->
+                    <p class="promotionTestQuestion">{{ question.question }}</p>
+                  </div>
+                  <!-- on boucle dans la liste de réponses possibles de chaque question -->
+                  <div class="promotionTestAnswers" *ngFor="let answer of question.answers">
+                    <div><!--ne pas toucher--></div>
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="reponse{{ i }}"
+                      value="{{ answer.id }}"
+                      id="{{ 'answer' + answer.id + '-' + (i + 1) }}"
+                      autocomplete="off"
+                      formControlName="reponse{{ i }}"
+                    />
+                    <label
+                      class="btn btn-secondary"
+                      for="{{ 'answer' + answer.id + '-' + (i + 1) }}"
+                    >
+                    <!-- texte de chaque réponse -->
+                      {{ answer.text }}
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="submit">Confirm Answers</button>
+        <a class="buttonStyleLink" [routerLink]="['/dashboard']">Go back to dashboard</a>
+        <!-- validator -->
+        <div class="promotionTestValidationError" *ngIf="myForm.submitted && myForm.invalid">
+          Please answer all questions before confirming
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

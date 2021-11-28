@@ -1,0 +1,155 @@
+[
+  {
+    "question": "Who was the first man to set foot on the Moon?",
+    "answers": [
+      {"id": 1, "text": "Michael Jackson"},
+      {"id": 2, "text": "Yuri Gagarin"},
+      {"id": 3, "text": "Tintin"},
+      {"id": 4, "text": "Neil Armstrong"}
+    ],
+    "idAnswer": 4
+  },
+  {
+    "question": "Which of these statements is false?",
+    "answers": [
+      {"id": 1, "text": "The larger the masses, the more gravity is felt"},
+      {"id": 2, "text": "The greater the distance, the more gravity is felt"},
+      {"id": 3, "text": "Gravity is only perceptible for large masses"},
+      {"id": 4, "text": "Gravity acts on all objects with mass"}
+    ],
+    "idAnswer": 2
+  },
+  {
+    "question": "Why do astronauts have to work out in space?",
+    "answers": [
+      {
+        "id": 1,
+        "text": "To stay healthy and fit for their return to gravity"
+      },
+      {"id": 2, "text": "Not to gain weight"},
+      {"id": 3, "text": "Because it's easier to gain muscle in space"},
+      {"id": 4, "text": "For nothing"}
+    ],
+    "idAnswer": 1
+  },
+  {
+    "question": "Which planet is furthest from the Sun?",
+    "answers": [
+      {"id": 1, "text": "Neptune"},
+      {"id": 2, "text": "Pluto"},
+      {"id": 3, "text": "Uranus"},
+      {"id": 4, "text": "Saturn"}
+    ],
+    "idAnswer": 1
+  },
+  {
+    "question": "What is at the center of galaxies?",
+    "answers": [
+      {"id": 1, "text": "A wormhole"},
+      {"id": 2, "text": "A star"},
+      {"id": 3, "text": "Another galaxy"},
+      {"id": 4, "text": "A supermassive black hole"}
+    ],
+    "idAnswer": 4
+  },
+  {
+    "question": "Which planet has the shortest day length?",
+    "answers": [
+      {"id": 1, "text": "Mars"},
+      {"id": 2, "text": "Jupiter"},
+      {"id": 3, "text": "Venus"},
+      {"id": 4, "text": "Neptune"}
+    ],
+    "idAnswer": 2
+  },
+  {
+    "question": "Which of these belts is Pluto in?",
+    "answers": [
+      {"id": 1, "text": "The Golden Belt"},
+      {"id": 2, "text": "The Kuiper Belt"},
+      {"id": 3, "text": "The asteroid belt"},
+      {"id": 4, "text": "The seat belt"}
+    ],
+    "idAnswer": 2
+  },
+  {
+    "question": "The tail of a comet is pointing in which direction?",
+    "answers": [
+      {"id": 1, "text": "In the direction of the Sun"},
+      {"id": 2, "text": "In the opposite direction to the Sun"},
+      {"id": 3, "text": "In the opposite direction to its movement"},
+      {"id": 4, "text": "In the direction of its movement"}
+    ],
+    "idAnswer": 2
+  },
+  {
+    "question": "Which stars live the longest?",
+    "answers": [
+      {"id": 1, "text": "The largest ones"},
+      {"id": 2, "text": "The average ones"},
+      {"id": 3, "text": "The smallest ones"},
+      {"id": 4, "text": "They all have the same lifespan"}
+    ],
+    "idAnswer": 3
+  },
+  {
+    "question": "What are sunspots?",
+    "answers": [
+      {"id": 1, "text": "Cold areas of the Sun"},
+      {"id": 2, "text": "Holes in the Sun"},
+      {"id": 3, "text": "Hot areas of the Sun"},
+      {"id": 4, "text": "Polluted areas of the Sun"}
+    ],
+    "idAnswer": 1
+  },
+  {
+    "question": "In space, astronauts ...",
+    "answers": [
+      {"id": 1, "text": "Grow 4 cm"},
+      {"id": 2, "text": "Grow 10cm"},
+      {"id": 3, "text": "Shrink 4cm"},
+      {"id": 4, "text": "Shrink 10cm"}
+    ],
+    "idAnswer": 1
+  },
+  {
+    "question": "What do you call a shape imagined by a group of stars?",
+    "answers": [
+      {"id": 1, "text": "Galaxy"},
+      {"id": 2, "text": "Constellation"},
+      {"id": 3, "text": "Nebula"},
+      {"id": 4, "text": "Black hole"}
+    ],
+    "idAnswer": 2
+  },
+  {
+    "question": "Angle measured from the horizon going up in a straight line",
+    "answers": [
+      {"id": 1, "text": "Altitude"},
+      {"id": 2, "text": "Azimuth"},
+      {"id": 3, "text": "Astrolabe"},
+      {"id": 4, "text": "Angle of incidence"}
+    ],
+    "idAnswer": 1
+  },
+  {
+    "question": "The elliptical orbit of the planets is the result of the rectilinear motion of the planets and ...",
+    "answers": [
+      {"id": 1, "text": "Centrifugal force"},
+      {"id": 2, "text": "The attraction of the Moon"},
+      {"id": 3, "text": "The force of gravity of the Sun"},
+      {"id": 4, "text": "The attraction of the Earth"}
+    ],
+    "idAnswer": 3
+  },
+  {
+    "question": "Where does the space start?",
+    "answers": [
+      {"id": 1, "text": "Beyond the thermosphere, at an altitude of 400 km"},
+      {"id": 2, "text": "At the same level as the stratosphere"},
+      {"id": 3, "text": "Beyond the thermosphere, at an altitude of 600 km"},
+      {"id": 4, "text": "Beyond the thermosphere at an altitude of 500 km"}
+    ],
+    "idAnswer": 4
+  }
+]

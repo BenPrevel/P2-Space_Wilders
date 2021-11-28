@@ -1,0 +1,23 @@
+.userHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.userAvatar {
+  height: 30vw;
+  border-radius: 100%;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .userAvatar {
+    height: 130px;
+    border-radius: 100%;
+  }
+}

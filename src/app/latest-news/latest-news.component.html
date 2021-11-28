@@ -1,0 +1,23 @@
+<section id="latestNews">
+  <div class="container">
+    <div class="row">
+      <h2 class="sectionTitle">latests news</h2>
+      <div class="gridNews">
+        <div class="newsBox" *ngFor="let info of news">
+          <div class="newsImageContainer">
+            <img src="{{ info.image }}" alt="nasa image" />
+            <div class="date">{{ info.date }}</div>
+            <div class="infoInfos">
+              <span></span>
+              <p class="infoNews">News</p>
+              <h3>{{ info.title }}</h3>
+              <div class="infosText">
+                <p>{{ info.text.length > 155 ? (info.text | slice: 0:155) + '...' : info.text }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

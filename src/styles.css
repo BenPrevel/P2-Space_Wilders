@@ -1,0 +1,161 @@
+:root {
+  --marsColor: #ba4c0e;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url('assets/fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: RubikOne;
+  src: url('assets/fonts/RubikOne-Regular.ttf');
+}
+
+body {
+  font-family: OpenSans;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: RubikOne;
+}
+
+/* Section titles */
+
+.sectionTitle {
+  color: #fff !important;
+  font-size: 36px;
+  width: 70%;
+  text-transform: uppercase;
+  margin: auto;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+/* General */
+
+button,
+input[type='submit'],
+input[type='reset'] {
+  background: transparent;
+  padding: 5px 10px;
+  border: 1px solid #fff;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background: #fff;
+  color: black;
+}
+
+.buttonList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.memberSections {
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  color: white;
+  align-items: center;
+}
+
+.hiddenOnMobile {
+  display: none;
+}
+
+.appRoot {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.dashboardSectionMainContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.dashboardStyle {
+  background-image: url('/assets/images/astro4.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+}
+
+.buttonStyleLink {
+  background: transparent;
+  padding: 5px 10px;
+  border: 1px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+}
+
+.buttonStyleLink:hover {
+  background: #fff;
+  color: black;
+}
+
+.downLink {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: none;
+  text-align: center;
+  padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  /* use this class to hide element on desktop */
+  .hiddenOnDesktop {
+    display: none;
+  }
+
+  /* use this class to show element on desktop when element is not displayed on mobile */
+  .shownOnDesktop {
+    display: initial;
+  }
+
+  .h1OnDashboardDesktop {
+    margin-bottom: 80px;
+  }
+
+  .dashboardStyle {
+    background-image: url('/assets/images/earth.jpg');
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0px;
+  }
+  .sectionTitle {
+    font-size: 48px;
+  }
+}

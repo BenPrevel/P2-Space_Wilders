@@ -1,0 +1,28 @@
+<footer>
+  <div class="socials">
+    <div class="container-fluid footerFlex">
+      <div class="socialsText text-light">
+        <p class="mb-0">Follow us on social medias</p>
+      </div>
+      <div class="socialsImages">
+        <ng-container *ngFor="let socialLink of socialLinks">
+          <a href="{{ socialLink.href }}" target="_blank" rel="noreferrer"
+            ><img src="{{ socialLink.image }}" alt="{{ socialLink.alt }}" class="socialsIcon"
+          /></a>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+  <div class="bg-dark footerDarkSection">
+    <h5 class="text-light footerTextLogo">Mars - 2939</h5>
+    <p class="text-light footerCopyright">© Copyright - 2021</p>
+    <div class="footerSeparator"></div>
+    <div class="footerLinks">
+      <ng-container *ngFor="let developper of developpers">
+        <a href="{{ developper.link }}" target="_blank" class="text-light" rel="noreferrer"
+          >{{ developper.name }} |
+        </a>
+      </ng-container>
+    </div>
+  </div>
+</footer>

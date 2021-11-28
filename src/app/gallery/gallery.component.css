@@ -1,0 +1,114 @@
+.titleGroup {
+  background: url('/assets/images/galleryMedia2.jpg') no-repeat center;
+  background-size: cover;
+  min-height: calc(100vh - 56px);
+  position: relative;
+}
+
+.titleGallery {
+  position: absolute;
+  color: white;
+  font-size: 60px;
+  top: 10vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+.container {
+  max-width: 100%;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content .content-overlay {
+  background: var(--marsColor);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay {
+  opacity: 0.6;
+}
+
+.content-image {
+  width: 100%;
+  height: 50vh;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  height: 80%;
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content:hover .content-details {
+  opacity: 1;
+  top: 50%;
+  left: 50%;
+}
+
+.content-details h3 {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details p {
+  color: #fff;
+  font-size: 0.8em;
+}
+.fadeIn-bottom {
+  top: 80%;
+}
+.col-md-4 {
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .titleGroup {
+    background: url('/assets/images/galleryDesktop2.jpg') no-repeat center;
+    background-size: cover;
+  }
+
+  .titleGallery {
+    font-size: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

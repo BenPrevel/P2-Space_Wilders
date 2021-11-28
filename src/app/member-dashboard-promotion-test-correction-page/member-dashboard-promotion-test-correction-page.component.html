@@ -1,0 +1,55 @@
+<div class="dashboardStyle">
+  <div class="memberSections">
+    <h1>Results</h1>
+    <p>You got {{ promotionTestPoints }} points out of {{ questionsArray.length }}.</p>
+    <p>Your rank is {{ userRank }}.</p>
+    <div class="TestAccordionAndConfirmButton">
+      <div class="TestAccordion" id="accordionExample">
+        <div>
+          <!-- on boucle dans la liste d'objets de question -->
+          <div *ngFor="let question of questionsArray; let i = index">
+            <div class="accordion-item">
+              <h2>
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  attr.data-bs-target="{{ '#multiCollapseExample' + (i + 1) }}"
+                  aria-expanded="false"
+                  aria-controls="multiCollapseExample2"
+                >
+                  Question #{{ i + 1 }}
+                </button>
+              </h2>
+              <div class="collapse show multi-collapse" id="{{ 'multiCollapseExample' + (i + 1) }}">
+                <fieldset class="accordion-body">
+                  <div>
+                    <!-- Texte de la question dans l'objet question -->
+                    <p class="promotionTestQuestion">{{ question.question }}</p>
+                  </div>
+                  <!-- on boucle dans la liste de réponses possibles de chaque question -->
+                  <div class="promotionTestAnswers" *ngFor="let answer of question.answers">
+                    <div><!--ne pas toucher--></div>
+                    <div
+                      class="btn btn-secondary"
+                      [ngClass]="{
+                        userAnswer: answer.id == idAnswersOfUser[i],
+                        rightAnswer: answer.id == question.idAnswer
+                      }"
+                    >
+                    <!-- texte de chaque réponse -->
+                      {{ answer.text }}
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="buttonStyleLink" [routerLink]="['/dashboard/seat-selection']">Select your seat</a>
+        <a class="buttonStyleLink" [routerLink]="['/dashboard']">Go back to Dashboard</a>
+        <a class="buttonStyleLink" [routerLink]="['/dashboard/promotion-test']">Try again</a>
+      </div>
+    </div>
+  </div>
+</div>

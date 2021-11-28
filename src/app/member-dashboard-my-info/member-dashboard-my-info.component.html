@@ -1,0 +1,41 @@
+<h1 class="h1OnDashboardDesktop">My Info</h1>
+<div class="dashboardSectionMainContent">
+  <app-member-dashboard-my-info-user-header
+    class="hiddenOnDesktop"
+  ></app-member-dashboard-my-info-user-header>
+  <!-- si  le localStorage  contient des données afficher ce template -->
+  <div class="uInfos" *ngIf="uInfos; else noInfos">
+    <p><b>Name:&nbsp; &nbsp; </b>{{ uInfos.uName }}</p>
+    <p><b>First Name:&nbsp; &nbsp; </b>{{ uInfos.uFirstName }}</p>
+    <p><b>Email:&nbsp; &nbsp; </b> {{ uInfos.uEmail }}</p>
+    <p><b>Date of Birth:&nbsp; &nbsp; </b>{{ uInfos.uBirthday }}</p>
+    <p><b>Phone:&nbsp; &nbsp; </b> {{ uInfos.uTel }}</p>
+    <p><b>Profession:&nbsp; &nbsp; </b> {{ uInfos.uJob }}</p>
+    <p><b>About you:&nbsp; &nbsp; </b> {{ uInfos.uAbout }}</p>
+  </div>
+  <!-- si  le localStorage ne contient aucunes données afficher ce template -->
+  <ng-template #noInfos>
+    <p>
+      <b>Name: </b>
+    </p>
+    <p>
+      <b>First Name: </b>
+    </p>
+    <p>
+      <b>Email: </b>
+    </p>
+    <p>
+      <b>Date of Birth: </b>
+    </p>
+    <p>
+      <b>Phone: </b>
+    </p>
+    <p>
+      <b>Profession: </b>
+    </p>
+    <p>
+      <b>About you: </b>
+    </p>
+  </ng-template>
+  <a class="buttonStyleLink hiddenOnDesktop" [routerLink]="['/dashboard/edit-profil']">Edit Info</a>
+</div>

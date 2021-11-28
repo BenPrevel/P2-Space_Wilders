@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/home" class="navbarLogoText text-light"
+      ><img src="assets/images/mars2939.png" alt="Our logo" class="navbarLogoImage" /> Mars -
+      2939</a
+    >
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item" *ngFor="let link of links">
+          <a
+            data-bs-toggle="collapse"
+            data-bs-target=".navbar-collapse"
+            class="nav-link"
+            routerLink="{{ link.link }}"
+            >{{ link.name }}</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

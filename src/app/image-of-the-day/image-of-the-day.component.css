@@ -1,0 +1,73 @@
+#imageOfTheDay {
+  background-color: #1b1b1b;
+}
+
+.sectionTitle {
+  color: #fff !important;
+  font-size: 36px;
+  width: 70%;
+  text-transform: uppercase;
+  margin: auto;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.block {
+  width: 90%;
+  margin: auto;
+}
+
+.containerImage {
+  overflow: hidden;
+}
+
+.containerImage > img {
+  width: 100%;
+}
+
+.textImageOfTheDay {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 80px;
+}
+
+.textImageOfTheDay > h3 {
+  color: var(--marsColor);
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.right {
+  text-align: right;
+}
+
+.containerVideo {
+  margin: 20px 0;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.containerVideo > iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Desktop */
+
+@media screen and (min-width: 768px) {
+  .sectionTitle {
+    font-size: 48px;
+  }
+  .block {
+    width: 50%;
+  }
+  .textImageOfTheDay > h3 {
+    font-size: 25px;
+  }
+}

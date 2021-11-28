@@ -1,0 +1,11 @@
+.containerMessage{
+    text-align: center;
+    font-size: 14px;
+    color: white;
+}
+@media screen and (min-width: 768px){
+    .containerMessage{
+        font-size: 14px;
+        font-size: 20px;
+    }
+}

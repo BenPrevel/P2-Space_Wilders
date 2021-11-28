@@ -1,0 +1,38 @@
+<div class="bkgrdColor">
+  <!-- paragraphe descriptif de mission -->
+  <div class="container">
+    <div class="ourMission">
+      <h1>Our Mission</h1>
+      <div class="txtMission">
+        <p>Elon Musk dreamed of it..... we did it !</p>
+        <p class="colo">THE COLONIZATION OF MARS</p>
+        <p>
+          By joining our community, you become the lucky ones among the 7 billion representatives of
+          the human race to travel to Mars.
+        </p>
+        <p>Together, we will establish a self-sustaining human community on the red planet.</p>
+        <p>
+          You will find on our application all the necessary information to increase your knowledge
+          about Mars and prepare your trip.
+        </p>
+        <p>The crew welcomes you in this new adventure.</p>
+        <p class="colo">To your bag !</p>
+        <div class="signature">
+          <p>Crew members.</p>
+          <img class="logoMars2939" src="assets/images/mars2939.png" alt="logo Mars 2939" />
+        </div>
+      </div>
+    </div>
+
+    <!-- paragraphe présentation des membres -->
+
+    <h1 class="crewTitle">Crew Members</h1>
+
+    <div class="pageCrew">
+      <div class="align" *ngFor="let astronaute of astronautes">
+        <img src="{{ astronaute.img }}" alt="{{ astronaute.name }}" class="astronaut crewAvatar" />
+        <p>{{ astronaute.name }} - {{ astronaute.role }}</p>
+      </div>
+    </div>
+  </div>
+</div>

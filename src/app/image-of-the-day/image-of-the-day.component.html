@@ -1,0 +1,20 @@
+<section id="imageOfTheDay">
+  <div class="container">
+    <div class="row">
+      <h2 class="sectionTitle">image of the day</h2>
+      <div class="block">
+        <div class="containerImage" *ngIf="imageOfTheDay$ && imageOfTheDay$.media_type === 'image'">
+          <img [src]="imageOfTheDay$.url" alt="image of the day" />
+        </div>
+        <div class="containerVideo" *ngIf="imageOfTheDay$ && imageOfTheDay$.media_type === 'video'">
+          <iframe [src]="imageOfTheDay$.url | safe" frameborder="0"></iframe>
+        </div>
+        <div class="textImageOfTheDay" *ngIf="imageOfTheDay$">
+          <h3>{{ imageOfTheDay$.title }}</h3>
+          <p>{{ imageOfTheDay$.explanation }}</p>
+          <p class="text-black-50 fst-italic right">{{ imageOfTheDay$.copyright }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

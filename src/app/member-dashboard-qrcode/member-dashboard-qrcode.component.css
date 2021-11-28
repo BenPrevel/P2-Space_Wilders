@@ -1,0 +1,47 @@
+h1 {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding-top: 2vh;
+}
+
+.qrContainer {
+  background: url('/assets/images/marsAstro.jpeg') no-repeat center;
+  background-size: cover;
+  height: calc(100vh - 194px);
+  position: relative;
+  text-align: center;
+}
+
+.qrCode {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.qrInfo {
+  color: white;
+  font-size: 3vh;
+  text-align: center;
+  padding-top: 33vh;
+}
+
+.btnBoarding {
+  position: absolute;
+  bottom: 3vh;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+@media screen and (min-width: 768px) {
+  .qrContainer {
+    background: url('/assets/images/mars.jpg') no-repeat center;
+    background-size: cover;
+    height: calc(100vh - 56px);
+    width: 100%;
+  }
+  .btnBoarding {
+    bottom: 5vh;
+  }
+}

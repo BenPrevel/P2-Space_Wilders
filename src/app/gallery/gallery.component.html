@@ -1,0 +1,40 @@
+<div class="titleGroup">
+  <h1 class="titleGallery">IMAGE GALLERY</h1>
+</div>
+<div>
+  <div class="downLink"><img src="assets/images/down.png" alt="to down" class="down" /></div>
+</div>
+
+<div id="allImage">
+  <div class="container">
+    <div class="row">
+      <!--loop dans la variable images contenant les données envoyées par la NASA -->
+      <ng-container *ngFor="let image of images | slice: 0:30">
+        <div class="col-md-4">
+          <div class="content">
+            <div class="content-overlay"></div>
+            <!--Affichage des valeurs seulement si un lien photo existe-->
+            <img
+              class="content-image"
+              *ngIf="image['links']"
+              src="{{ image['links'][0]['href'] }}"
+              alt="image-nasa"
+              loading="lazy"
+            />
+
+            <div class="content-details fadeIn-bottom">
+              <h3 class="content-title">{{ image['data'][0]['title'] }}</h3>
+              <p class="content-text">
+                <i class="fa fa-map-marker"></i> {{ image['data'][0]['description'] }}
+              </p>
+              <!--Affichage des des crédits si "secondary creator" n'est pas vide-->
+              <p class="secondaryCreator" *ngIf="image['data'][0]['secondary_creator']">
+                Photo Credit: {{ image['data'][0]['secondary_creator'] }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>
